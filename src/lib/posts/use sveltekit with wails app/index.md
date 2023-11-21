@@ -76,6 +76,12 @@ const config = {
 
 export default config;
 ```
+and add new file `+layout.ts` in the routes folder with this content to disable ssr and prerendering because we want this to be a Single-Page App (SPA)
+```typescript
+export const prerender = false;
+export const ssr = false;
+```
+
 
 ## Step4: Test Your Wails App
 Let's start our app to see how it looks. Run this command in the root folder:
