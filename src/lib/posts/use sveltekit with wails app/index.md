@@ -77,25 +77,12 @@ const config = {
 export default config;
 ```
 
-## Step 4: Add Hooks to Your Svelte App
-In **src** folder, create a new file called `hooks.ts`. Paste the following code:
-```typescript
-/** @type {import('@sveltejs/kit').Handle} */
-export async function handle({ event, resolve }) {
-	// SPA mode (https://github.com/sveltejs/kit/tree/master/packages/adapter-static#spa-mode)
-	const response = await resolve(event, { ssr: false });
-	return response;
-}
-```
-
-Great work! You’re almost there.
-
-## Step 5: Test Your Wails App
+## Step4: Test Your Wails App
 Let's start our app to see how it looks. Run this command in the root folder:
 ```shell
 wails dev
 ```
-## Step 6: Build Your Wails App
+## Step 5: Build Your Wails App
 Satisfied with the app? Fantastic! Now, let's build our app. Run this command:
 ```shell
 wails build
