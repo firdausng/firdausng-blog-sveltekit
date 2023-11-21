@@ -76,19 +76,24 @@ const config = {
 
 export default config;
 ```
-and add new file `+layout.ts` in the routes folder with this content to disable ssr and prerendering because we want this to be a Single-Page App (SPA)
+changes:
+- update the `preprocess` to use preprocess from `svelte-preprocess`
+- update `adapter` to use adapter from `@sveltejs/adapter-static` and change the output to `dist` because wails app expect output from dist folder
+
+## Step 4: Enable  Single-Page App (SPA)
+add new file `+layout.ts` in the routes folder with this content to disable ssr and prerendering because we want this to be a Single-Page App (SPA)
 ```typescript
 export const prerender = false;
 export const ssr = false;
 ```
 
 
-## Step4: Test Your Wails App
+## Step 5: Test Your Wails App
 Let's start our app to see how it looks. Run this command in the root folder:
 ```shell
 wails dev
 ```
-## Step 5: Build Your Wails App
+## Step 6: Build Your Wails App
 Satisfied with the app? Fantastic! Now, let's build our app. Run this command:
 ```shell
 wails build
