@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+</script>
+
+<div class="flex flex-col gap-2 items-center justify-center h-screen bg-app-light">
+	<h1 class="text-center">Hi, I am Firdaus</h1>
+</div>
