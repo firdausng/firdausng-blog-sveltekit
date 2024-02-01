@@ -1,6 +1,6 @@
 <script lang="ts">
-	import './styles.css';
-	import PageTransition from './transition.svelte'
+	import '../styles.css';
+	import PageTransition from '../transition.svelte'
 	import Sidebar from './sidebar.svelte'
 
 	export let data: {url:string}
