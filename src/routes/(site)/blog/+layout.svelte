@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../styles.css';
+	import '../../styles.css';
 	import PageTransition from '../../transition.svelte'
 	import Sidebar from '../sidebar.svelte'
 
