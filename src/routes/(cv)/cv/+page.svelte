@@ -205,7 +205,7 @@
 		</div>
 	</nav>
 	<div class="flex gap-4">
-		<aside class="w-1/5 flex flex-col gap-2">
+		<aside class="w-1/5 flex flex-col gap-2 break-words">
 				<section>
 					<h3 class="text-2xl font-semibold">Details</h3>
 					<hr
