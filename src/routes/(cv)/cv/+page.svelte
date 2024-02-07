@@ -11,6 +11,31 @@
 						duration: 'January 2023 - Present',
 						description: [
 							'Leading a team of 3 developers and 3 QA professionals, I ensure successful project delivery and meet timelines'
+						],
+						achievements: [
+							{
+								name: "Sitecore Connect",
+								details: [
+									"Sitecore Connect, is a Low-code / No-code integration platform built on Workato. This platform enables your organization to connect Sitecore products with the rest of your tech stack with ease.",
+									"Involve in the team that develop and deploy sitecore connect from scratch",
+									"https://developers.sitecore.com/integrations/connect"
+								]
+							},
+							{
+								name: "Sitecore Mesh",
+								details: [
+									"Sitecore Mesh is an internal application to support integration between any Sitecore product",
+									"It is an event-driven architecture that can handle million of event come in and also publish those event to a webhook or any other system",
+									"Involve in the team that develop and deploy sitecore mesh from scratch",
+								]
+							},
+							{
+								name: "Sitecore Audit",
+								details: [
+									"Sitecore Audit is an Sitecore application that provide audit data to any Sitecore product",
+									"Involve in the team that develop and deploy sitecore audit from scratch",
+								]
+							}
 						]
 					},
 					{
@@ -22,6 +47,24 @@
 							'Developed component for the new sitecore product based on microservice and technologies such as .NET 6, azure, kafka, redis, cosmosdb, elasticsearch',
 							'Launch Sitecore connect (Sitecore app that enable workflow automation that integrate with WOrkato)',
 							'Inside the team that maintained existing Sitecore connector for Saleforce Integration'
+						],
+						achievements: [
+							{
+								name: "Sitecore Connect",
+								details: [
+									"Sitecore Connect, is a Low-code / No-code integration platform built on Workato. This platform enables your organization to connect Sitecore products with the rest of your tech stack with ease.",
+									"Involve in the team that develop and deploy sitecore connect from scratch",
+									"https://developers.sitecore.com/integrations/connect"
+								]
+							},
+							{
+								name: "Sitecore Mesh",
+								details: [
+									"Sitecore Mesh is an internal application to support integration between any Sitecore product",
+									"It is an event-driven architecture that can handle million of event come in and also publish those event to a webhook or any other system",
+									"Involve in the team that develop and deploy sitecore mesh from scratch",
+								]
+							}
 						]
 					}
 				]
@@ -46,6 +89,16 @@
 						duration: 'January 2020 - May 2021',
 						description: [
 							'.NET developer and part of the Sitecore Salesforce Connector team to integrate Sitecore products with Salesforce'
+						],
+						achievements: [
+							{
+								name: "Sitecore Connector",
+								details: [
+									"Responsible on the launch of Sitecore connector integration with Salesforce that enable event from Salesforce to be sent to Sitecore",
+									"Involve in the team that develop connector",
+									"https://www.sitecore.com/products/connectors"
+								]
+							}
 						]
 					},
 					{
@@ -66,6 +119,15 @@
 						duration: 'August 2018 - December 2018',
 						description: [
 							'Lead the test automation effort and also ci/cd'
+						],
+						achievements: [
+							{
+								name: "Test Automation Framework",
+								details: [
+									"Responsible on building the Test automation from scratch",
+									"Mentor other QA engineer on how to automate as well provide any solution for their need such as Test report and test case automation",
+								]
+							}
 						]
 					}
 				]
@@ -78,6 +140,15 @@
 						duration: 'August 2018 - December 2018',
 						description: [
 							'Lead the test automation effort and also ci/cd'
+						],
+						achievements: [
+							{
+								name: "Test Automation Framework",
+								details: [
+									"Responsible on building the Test automation from scratch",
+									"Mentor other QA engineer on how to automate as well provide any solution for their need such as Test report and test case automation",
+								]
+							}
 						]
 					}
 				]
@@ -88,7 +159,16 @@
 					{
 						name: 'Automation Engineer',
 						duration: 'May 2015 - August 2016',
-						description: []
+						description: [],
+						achievements: [
+							{
+								name: "Test Automation Framework",
+								details: [
+									"Responsible on building the Test automation from scratch",
+									"Mentor other QA engineer on how to automate as well provide any solution for their need such as Test report and test case automation",
+								]
+							}
+						]
 					}
 				]
 			},
@@ -265,7 +345,7 @@
 										<p class="text-md font-semibold underline underline-offset-8">{position.duration}</p>
 									</div>
 									<div>
-										<ul>
+										<ul class="list-disc">
 											{#each position.description as description (description)}
 												<li>
 													{description}
@@ -273,6 +353,28 @@
 											{/each}
 										</ul>
 									</div>
+
+									{#if position.achievements}
+										<div class="pt-2">
+											<h4 class="text-md font-semibold ">Achievements</h4>
+										</div>
+										{#each position.achievements as achievement (achievement)}
+											<div class="pl-4">
+												<div class="py-2">
+													<p class="text-md font-semibold underline underline-offset-8">{achievement.name}</p>
+												</div>
+												<ul class="list-disc">
+													{#each achievement.details as detail (detail)}
+														<li>
+															{detail}
+														</li>
+													{/each}
+
+												</ul>
+											</div>
+										{/each}
+									{/if}
+
 								</div>
 							{/each}
 						</div>
